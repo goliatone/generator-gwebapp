@@ -1,7 +1,7 @@
 // Karma configuration
 // Generated on Fri Jul 05 2013 01:57:57 GMT-0400 (EDT)
 /*global basePath:true, exclude:true, reporters:true, files:true*/
-/*global coverageReporter:true, junitReporter:true, reporters:true, 
+/*global coverageReporter:true, junitReporter:true, reporters:true,
 preprocessors:true, frameworks:true*/
 /*global port:true, runnerPort:true, colors:true, logLevel:true*/
 /*global autoWatch:true, browsers:true, captureTimeout:true, singleRun:true*/
@@ -16,9 +16,10 @@ module.exports = function(config) {
 
         // list of files / patterns to load in the browser
         files: [
-            {pattern: 'lib/jquery/jquery.js', included: false},
-            {pattern: 'lib/requirejs/require.js', included: false},
-            {pattern: 'src/*.js', included: false},
+            {pattern: 'app/components/jquery/jquery.js', included: false},
+            {pattern: 'app/components/requirejs/require.js', included: false},
+            {pattern: 'app/*.js', included: false},
+            {pattern: 'app/js/*.js', included: false},
             {pattern: 'test/spec/*-spec.js', included: false},
 
             // helpers & fixtures for jasmine-jquery
